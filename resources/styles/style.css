@@ -1,7 +1,7 @@
 /*universal styles*/
 
 html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
 
@@ -73,6 +73,11 @@ header .mobil {
   header .logo{
     display: flex;
     align-items: center;
+  }
+
+  header #logotitle{
+    font-family: 'Poiret One', sans-serif;
+    font-size: x-large;
   }
 
   header .logo img{

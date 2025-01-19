@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/abc070f049.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/styles/style.css">
-    <title>COLMAR Academy</title>
+    <title>Coronaditos Valladolid</title>
 </head>
 
 <body>
@@ -13,15 +16,16 @@
     <header>
         <div class="desktop">
             <div class="logo left">
-                <img src="./resources/images/ic-logo.svg" alt="logo lion colmar">
-                <p><span class="bold">COLMAR</span>ACADEMY</p>
+                <img src="./resources/images/CoronaditosLogo.svg" alt="Coronaditos Logo">
+                <p id="logotitle">Coronaditos Valladolid</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">On Campus</a></li>
-                    <li><a href="#">Online</a></li>
-                    <li><a href="#">For Companies</a></li>
-                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Descripción</a></li>
+                    <li><a href="#">Cuartos</a></li>
+                    <li><a href="#">Lugar</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Comentarios</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,62 +50,29 @@
 
         <div class="banner">
             <div class="image-container">
-                <img src="./resources/images/banner_resized.jpg" alt="students studying foto">
+                <img src="./resources/images/FotoBanner.jpeg" alt="Main Room Foto">
             </div>
             <div class="start-here">
                 <h1>Learn Something new everyday</h1>
                 <h4>Lorem ipsum something new and stop procatinating, focus on yourself king</h4>
-                <div class="button">
-                    Start here
-                </div>
             </div>
         </div>
 
-        <!-- articles section -->
+        <!-- Descripción -->
         <div class="section">
             <div class="desktop">
                 <div class="subsection left">
                     <div class="image-container">
                         <img src="./resources/images/information-main.jpg" alt="student learning foto">
                     </div>
+                </div>
+                <div class="subsection right">
                     <div class="section-content">
                         <h2>It doesn't hurt to keep practicing</h2>
                         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
                             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
                             eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
                         <h5>Emmanuel, Sr. Strategist at hiring.com</h5>
-                    </div>
-                </div>
-                <div class="subsection right">
-                    <div class="article">
-                        <div class="image-container">
-                            <img src="./resources/images/information-orientation.jpg" alt="orientation information">
-                        </div>
-                        <div class="article-content">
-                            <h3>Orientation Date</h3>
-                            <p>Tue 10/11 & Wed 10/12: 8:00 - 9:00am</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="image-container">
-                            <img src="./resources/images/information-campus.jpg" alt="campus information">
-                        </div>
-                        <div class="article-content">
-                            <h3>Our Campus</h3>
-                            <p>Find out which campus is close to you</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="image-container">
-                            <img src="./resources/images/information-guest-lecture.jpg" alt="James Williams Lecture image">
-                        </div>
-                        <div class="article-content">
-                            <h3>Our Guest Lecture</h3>
-                            <p>join a lecture with james williams about bee farms</p>
-                            <a href="#">Read More</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -141,10 +112,10 @@
             </div>
         </div>
 
-        <!-- courses section -->
-        <div class="courses-section">
+        <!-- rooms section -->
+        <div class="rooms">
             <div class="title">
-                <h1>Start Learning</h1>
+                <h1>Rooms</h1>
             </div>
             <div class="courses">
                 <div class="course">
@@ -171,72 +142,82 @@
                     <p><span class="bold">COURSES</span></p>
                     <p>User Experience Design UX/UD</p>
                 </div>
-                <div class="course">
-                    <div class="image-container">
-                        <img src="./resources/images/course-data.jpg" alt="data science">
-                    </div>
-                    <h3>Data</h3>
-                    <p><span class="bold">COURSES</span></p>
-                    <p>Data Science, Big Data, SQL, Data Visualization</p>
-                </div>
-                <div class="course">
-                    <div class="image-container">
-                        <img src="./resources/images/course-business.jpg" alt="business and management">
-                    </div>
-                    <h3>Business</h3>
-                    <p><span class="bold">COURSES</span></p>
-                    <p>Product Develoment, Business Develoment, Startup</p>
-                </div>
-                <div class="course">
-                    <div class="image-container">
-                        <img src="./resources/images/course-marketing.jpg" alt="marketing page">
-                    </div>
-                    <h3>Marketing</h3>
-                    <p><span class="bold">COURSES</span></p>
-                    <p>Analytics, Content Marketing, Mobile Marketing</p>
-                </div>
             </div>
         </div>
 
-        <div class="thesis-section">
-            <div class="title">
-                <h1>Thesis Exhibit</h1>
-            </div>
+        <div class="location">
+
             <div class="content">
                 <div class="subsection left">
-                    <video class="video-container" autoplay loop muted>
-                        <source src="./resources/videos/thesis.mp4" type="video/mp4">
-                    </video> 
+                    <p> this is the subsection left</p>
+                </div>
+                <div class="subsection right">
                     <div class="section-content">
+                        <h1>Location</h1>
                         <h2>Reimagine Urban</h2>
                         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
                             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
                             eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Sobre Nosotros -->
+        <div class="section">
+            <div class="desktop">
+                <div class="subsection left">
+                    <div class="image-container">
+                        <img src="./resources/images/information-main.jpg" alt="student learning foto">
+                    </div>
+                </div>
+                <div class="subsection right">
+                    <div class="section-content">
+                        <h2>Sobre Nosotros</h2>
+                        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+                            nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
+                            eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                        <h5>Emmanuel, Sr. Strategist at hiring.com</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="mobil">
                 <div class="subsection right">
                     <div class="article">
                         <div class="image-container">
-                            <img src="./resources/images/thesis-fisma.jpg" alt="fisma thesis">
+                            <img src="./resources/images/information-orientation-mobile.jpg" alt="orientation information">
                         </div>
                         <div class="article-content">
-                            <h3>Fisma: Design and Prototype</h3>
-                            <p>Designer Showcase of a new prototype product</p>
+                            <h3>Orientation Date</h3>
+                            <p>Tue 10/11 & Wed 10/12: 8:00 - 9:00am</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                     <div class="article">
                         <div class="image-container">
-                            <img src="./resources/images/thesis-now-and-then.jpg" alt="now and then new york thesis">
+                            <img src="./resources/images/information-campus-mobile.jpg" alt="campus information">
                         </div>
                         <div class="article-content">
-                            <h3>Now and Then</h3>
-                            <p>Research study about New York</p>
+                            <h3>Our Campus</h3>
+                            <p>Find out which campus is close to you</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
-
+                    <div class="article">
+                        <div class="image-container">
+                            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="James Williams Lecture image">
+                        </div>
+                        <div class="article-content">
+                            <h3>Our Guest Lecture</h3>
+                            <p>join a lecture with james williams about bee farms</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        
 
         <footer>
             <div class="copyright">
