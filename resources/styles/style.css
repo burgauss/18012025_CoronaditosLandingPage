@@ -78,6 +78,7 @@ header .mobil {
   header #logotitle{
     font-family: 'Poiret One', sans-serif;
     font-size: x-large;
+    font-weight:bolder;
   }
 
   header .logo img{
@@ -103,6 +104,8 @@ header .mobil {
   header nav li a{
     text-decoration: none;
     color: #4a4a4a;
+    font-size: large;
+    font-weight: bold;
   }
 
   @media only screen and (max-width:480px){
@@ -131,7 +134,7 @@ header .mobil {
 
   .banner .image-container img{
     /* overflow: hidden; */
-    height: auto;
+    height: 500px;
   }
 
   .banner .start-here{
@@ -141,7 +144,6 @@ header .mobil {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 20rem;
   }
 
   .banner h1{
