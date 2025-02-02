@@ -125,44 +125,47 @@ header .mobil {
   /* banner section  */
   .banner{
     background-color: lightgray;
+    background-image: url("/resources/images/FondoBanner_2.svg");
     display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2rem 1.5rem;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2rem 1.5rem 0px;
     gap:0;
   }
 
   .banner .image-container img{
-    /* overflow: hidden; */
+    border-radius: 4px;
+    width: auto;
     height: 500px;
+    padding: 1rem;
   }
 
   .banner .start-here{
     margin-left: 1.5rem;
-    /* padding-right: 25rem; */
+    padding: 3rem 4rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    text-align:justify;
+  }
+  .banner .start-here h4{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .banner h1{
     color:#4a4a4a;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    font-weight: 900;
   }
 
   .banner h4{
-    font-size: 1.1rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-family:'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .banner img{
-    display: block;
-    width: 100%;
-  }
-
-  .banner .button{
-    text-align: center;
-  }
 
   @media only screen and (max-width:480px){
 
