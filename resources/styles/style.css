@@ -199,23 +199,43 @@ header .mobil {
 
   /* section Descripcion */
   .section .desktop{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
+    overflow: hidden; */
+    background-image: url("../images/FondoCoronaditosWeb.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
   }
 
-  .section .desktop .left{
-    width: 60rem;
+  .DescripcionSection h1{
+    margin: 0px;
+    color:#4a4a4a;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 0.5rem;
+  }
+
+  .section .DescripcionSection{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
   }
 
-  .left .image-container img{
+  .DescripcionSection .image-container3{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .DescripcionText h2{
+    margin: 0rem 2rem;
+  }
+
+  /* .left .image-container img{
     width: 100%;
   }
 
@@ -238,7 +258,7 @@ header .mobil {
 
   .section .desktop .article .image-container img{
     width: 80%;
-  }
+  } */
 
   .section .desktop .article img{
     /* width: 60%; */
