@@ -235,51 +235,11 @@ header .mobil {
     margin: 0rem 2rem;
   }
 
-  /* .left .image-container img{
-    width: 100%;
-  }
-
-  .section .section-content{
-    text-align: left;
-  }
-
-  .section .desktop .right{
-    border-left: solid 1px gray;
-    margin-left: 1.5rem;
-  }
-.section .desktop .article{
-    border-bottom: solid 2px gray;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem;
-    
-  }
-
-  .section .desktop .article .image-container img{
-    width: 80%;
-  } */
-
   .section .desktop .article img{
     /* width: 60%; */
 
   }
-
-  .article-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 300px;
-  }
-
-  .article-content h3{
-    color: #4a4a4a;
-  }
-
-  .article-content p{
-    font-size: 0.7rem;
-  }
+    
 
   @media only screen and (max-width:480px){
 
