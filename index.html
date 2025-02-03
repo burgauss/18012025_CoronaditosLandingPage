@@ -84,20 +84,6 @@
                             dejar de probar la famosa longaniza de Valladolid.</h2>
                     </div>
                 </div>
-                <!-- <div class="subsection left">
-                    <div class="image-container">
-                        <img src="./resources/images/information-main.jpg" alt="student learning foto">
-                    </div>
-                </div>
-                <div class="subsection right">
-                    <div class="section-content">
-                        <h2>It doesn't hurt to keep practicing</h2>
-                        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
-                            nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
-                            eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-                        <h5>Emmanuel, Sr. Strategist at hiring.com</h5>
-                    </div>
-                </div> -->
             </div>
             <div class="mobil">
                 <div class="subsection right">
@@ -139,34 +125,55 @@
 
         <!-- rooms section -->
         <div class="rooms">
-            <div class="title">
-                <h1>Rooms</h1>
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="img_woods_wide.jpg" style="width:100%">
             </div>
-            <div class="courses">
-                <div class="course">
-                    <div class="image-container">
-                        <img src="./resources/images/course-software.jpg" alt="software course image">
-                    </div>
-                    <h3>Software Engineering</h3>
-                    <p><span class="bold">COURSES</span></p>
-                    <p>WEB Develoment, Mobile, Development, iOT, APIs</p>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="img_5terre_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img_mountains_wide.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
                 </div>
-                <div class="course">
-                    <div class="image-container">
-                        <img src="./resources/images/course-computer-art.jpg" alt="computer art image">
-                    </div>
-                    <h3>Computer art</h3>
-                    <p><span class="bold">COURSES</span></p>
-                    <p>Imaging and Design</p>
+                <div class="column">
+                    <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
                 </div>
-                <div class="course">
-                    <div class="image-container">
-                        <img src="./resources/images/course-design.jpg" alt="Computer Design">
-                    </div>
-                    <h3>Design</h3>
-                    <p><span class="bold">COURSES</span></p>
-                    <p>User Experience Design UX/UD</p>
+                <div class="column">
+                    <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords">
                 </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
+            </div>
             </div>
         </div>
 
