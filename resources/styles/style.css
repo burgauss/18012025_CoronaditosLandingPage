@@ -124,8 +124,10 @@ header .mobil {
 
   /* banner section  */
   .banner{
-    background-color: lightgray;
-    background-image: url("/resources/images/FondoBanner_2.svg");
+    /* background-color: lightgray; */
+    background-image: url("../images/FondoBanner_2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display:flex;
     justify-content: center;
     /* align-items: center; */
@@ -148,10 +150,12 @@ header .mobil {
     justify-content: flex-start;
     align-items: center;
     text-align:justify;
+    border-left: solid 1px gray;
   }
   .banner .start-here h4{
     padding-left: 2rem;
     padding-right: 2rem;
+    
   }
 
   .banner h1{
@@ -165,6 +169,7 @@ header .mobil {
     font-size: 2rem;
     font-family:'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
   }
+
 
 
   @media only screen and (max-width:480px){
@@ -192,7 +197,7 @@ header .mobil {
     }
 
 
-  /* section articles */
+  /* section Descripcion */
   .section .desktop{
     display: flex;
     justify-content: center;
@@ -221,7 +226,7 @@ header .mobil {
   .section .desktop .right{
     border-left: solid 1px gray;
     margin-left: 1.5rem;
-}
+  }
 .section .desktop .article{
     border-bottom: solid 2px gray;
     display: flex;
