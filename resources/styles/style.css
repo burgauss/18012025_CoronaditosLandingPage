@@ -239,7 +239,7 @@ header .mobil {
     /* width: 60%; */
 
   }
-    
+
 
   @media only screen and (max-width:480px){
 
@@ -293,50 +293,86 @@ header .mobil {
     }
 
 } 
+/*///////////////////////////////
+/* Rooms section */
+/*//////////////////////////////
+*/
 
-/* courses section */
-
-.courses-section{
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
+.roomsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.courses-section .title{
-    text-align: center;
-    color: #4a4a4a;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 25%;
+  position: relative;
+  margin: auto;
 }
-.courses{
-    display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.courses .course{
-    background-color: white;
-    width: 25%;
-    height: 350px;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.course h3{
-    color: #4a4a4a;
-    margin-left: 0.4rem;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.course p{
-    margin-left: 0.4rem;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
 
-.course .image-container img{
-    width:100%;
-
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 /* courses section mobile */
 
 @media only screen and (max-width:480px)
@@ -376,6 +412,7 @@ header .mobil {
     }
     
 }
+
 /* tesis exhibit section */
 
 .thesis-section{
