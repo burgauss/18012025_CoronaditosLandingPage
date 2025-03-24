@@ -302,11 +302,23 @@ header .mobil {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-around;
+
+}
+
+.rooms h1{
+  margin: 0px;
+  color:#4a4a4a;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 25%;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
@@ -362,11 +374,15 @@ header .mobil {
   top: 0;
 }
 
-
 /* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.roomsText h4{
+  font-size: 2rem;
+  font-family: 'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @keyframes fade {
