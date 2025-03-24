@@ -134,63 +134,96 @@
                     <div class="slideshow-container">
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
+                            <div class="numbertext">1 / 7</div>
                             <img src="./resources/images/FotoSlideShow1.jpeg" style="width:100%">
-                        <div class="text">Caption Text</div>
+                            <div class="text">Habitación coral cama</div>
                         </div>
-                    
+
                         <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
+                            <div class="numbertext">2 / 7</div>
                             <img src="./resources/images/FotoSlideShow2.jpeg" style="width:100%">
-                        <div class="text">Caption Two</div>
+                            <div class="text">Habitación Faro cama</div>
                         </div>
-                    
+
                         <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
+                            <div class="numbertext">3 / 7</div>
                             <img src="./resources/images/FotoSlideShow3.jpeg" style="width:100%">
-                        <div class="text">Caption Three</div>
+                            <div class="text">Habitación coral este</div>
                         </div>
-                    
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 7</div>
+                            <img src="./resources/images/FotoSlideShow4.jpeg" style="width:100%">
+                            <div class="text">Cocina comedor</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 7</div>
+                            <img src="./resources/images/FotoSlideShow5.jpeg" style="width:100%">
+                            <div class="text">Barra</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 7</div>
+                            <img src="./resources/images/FotoSlideShow6.jpeg" style="width:100%">
+                            <div class="text">Baños revestidos de Chukum</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 7</div>
+                            <img src="./resources/images/FotoSlideShow7.jpeg" style="width:100%">
+                            <div class="text">Tina Chukum</div>
+                        </div>
+
+
                         <!-- Next and previous buttons -->
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                     <div class="roomsText">
-                        <h4>Disfruta del encanto de Valladolid o visita las playas cercanas desde Coronaditos Valladolid, un
-                            renovado apartamento de 2 dormitorios en el histórico barrio de Colonos. Ofrece cocina equipada,
-                            habitaciones con A/C y TV, baño con tina y estacionamiento.
+                        <h4>El apartamento dispone de dos amplias y acogedoras habitaciones: una equipada con una cama
+                            king-size y la otra con una
+                            cama doble y una hamaca, ofreciendo un ambiente de descanso y comodidad.
+
+                            El baño compartido, de generosas dimensiones, cuenta con una elegante bañera, doble lavabo y
+                            un distintivo acabado
+                            arquitectónico en chukum, que aporta un toque sofisticado y natural al espacio.
+
+                            Situado en elsegundo piso y orientado al sur, el apartamento goza de una ubicación
+                            privilegiada, con fácil acceso a tiendas, gimnasios y farmacias, brindando conveniencia y
+                            confort a sus residentes
                         </h4>
                     </div>
                     <br>
-                    
+
                     <script>
                         let slideIndex = 1;
                         showSlides(slideIndex);
-                        
+
                         function plusSlides(n) {
-                        showSlides(slideIndex += n);
+                            showSlides(slideIndex += n);
                         }
-                        
+
                         function currentSlide(n) {
-                        showSlides(slideIndex = n);
+                            showSlides(slideIndex = n);
                         }
-                        
+
                         function showSlides(n) {
-                        let i;
-                        let slides = document.getElementsByClassName("mySlides");
-                        let dots = document.getElementsByClassName("dot");
-                        if (n > slides.length) {slideIndex = 1}    
-                        if (n < 1) {slideIndex = slides.length}
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";  
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
                         }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex-1].style.display = "block";  
-                        dots[slideIndex-1].className += " active";
-                        }
-                        </script>
+                    </script>
                 </div>
             </div>
         </div>

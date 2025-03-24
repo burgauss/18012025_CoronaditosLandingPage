@@ -155,7 +155,6 @@ header .mobil {
   .banner .start-here h4{
     padding-left: 2rem;
     padding-right: 2rem;
-    
   }
 
   .banner h1{
@@ -301,9 +300,8 @@ header .mobil {
 .roomsContainer {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-around;
-
+  padding: 2rem 1.5rem 0px;
 }
 
 .rooms h1{
@@ -318,7 +316,8 @@ header .mobil {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  width: 25%;
+  flex-shrink: 0;
   position: relative;
   margin: auto;
 }
@@ -380,9 +379,13 @@ header .mobil {
   animation-duration: 1.5s;
 }
 
+
 .roomsText h4{
   font-size: 2rem;
   font-family: 'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
 }
 
 @keyframes fade {
