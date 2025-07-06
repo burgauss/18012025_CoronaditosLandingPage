@@ -382,7 +382,7 @@ header .mobil {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* courses section mobile */
+/* Rooms section mobile */
 
 @media only screen and (max-width:480px)
 {
@@ -422,68 +422,34 @@ header .mobil {
     
 }
 
-/* tesis exhibit section */
+/*End of Rooms Section*/
 
-.thesis-section{
+/* Location section */
+
+.location h1{
+  margin: 0px;
+  color:#4a4a4a;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.locationContainer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.thesis-section .content{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.thesis-section .left{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    border-right: solid 1px gray;
-    margin-right: 0.75rem;
-    padding-right: 0.75rem;
+    justify-content: space-around;
+    padding: 2rem 1.5rem 0px;
 }
 
 
-.thesis-section h1{
-    color: #4a4a4a;
+.locationText h2{
+  font-size: 2rem;
+  font-family: 'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
 }
-
-
-
-.thesis-section video{
-    width: 100%;
-}
-
-.thesis-section .section-content{
-    text-align: left;
-    /* width: 100px; */
-}
-/* 
-.thesis-section .right{
-    border-left: solid 1px gray;
-    margin-left: 1.5rem;
-} */
-
-
-.thesis-section .article{
-    border-bottom: solid 2px gray;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem;
-  }
-
-
-  .thesis-section .article .image-container img{
-    width: 80%;
-  }
 
   @media only screen and (max-width:480px){
 
