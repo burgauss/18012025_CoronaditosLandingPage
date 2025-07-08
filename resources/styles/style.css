@@ -569,6 +569,10 @@ textarea::placeholder, input::placeholder{
   height: 50px;
   cursor: pointer;
 }
+
+.fs-button:hover{
+  background-color: #3D3D3D;
+}
 /* .contacto-left{
   border-right: 1px solid;
 } */
