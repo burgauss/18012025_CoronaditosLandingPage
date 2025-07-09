@@ -510,7 +510,47 @@ header .mobil {
 .contacto-left{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 30%;
+  border-right: 1px solid;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.whatsappLink:link, .whatsappLink:visited{
+  text-decoration: none;
+}
+
+.whatsappButton{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #25D366;
+  /* box-shadow: 0 0 20px black;  */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.whatsappLink img{
+  height: 30px;
+  padding-right: 8px;
+}
+
+span.button-text{
+  font-family: 'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 5px;
+  color: black;
+  font-weight: 1000;
+}
+
+.whatsappButton:hover{
+  background-color: #2bb75f;
 }
 
 .contact-form{
@@ -544,8 +584,8 @@ header .mobil {
   border: 1px solid #F0FAF1;
   color: #283629;
   outline: solid;
-  font-family:  'Poiret One', Verdana, Geneva, Tahoma, sans-serif;;
-
+  font-family:  'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
 }
 
 textarea{
@@ -573,12 +613,6 @@ textarea::placeholder, input::placeholder{
 .fs-button:hover{
   background-color: #3D3D3D;
 }
-/* .contacto-left{
-  border-right: 1px solid;
-} */
-/* .contact-form{
-  border-left: 1px solid;
-} */
 
 
 /* END OF CONTACT SECTION*/

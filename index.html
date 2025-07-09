@@ -262,12 +262,12 @@
                             <h4>
                                 Want to reserve? please contact us by filling the formular or send un a message in whatsapp by clicking the link below
                             </h4>
-                            <div class="whatsappLink">
+                            <a href="https://wa.me/529992978195" target="_blank" class="whatsappLink">
                                 <button  class="whatsappButton">
                                     <img src="./resources/images/whatsapp.svg" alt="whatsapp" >
-                                    WhatsApp
+                                    <span class="button-text">Send us a message</span>
                                 </button>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="contacto-right">
@@ -279,11 +279,11 @@
                                 </div>
                                 <div class="fs-field">
                                     <label class="fs-label" for="email">Email Address</label>
-                                    <input class="fs-input" id="email" name="email" required placeholder="E-mail" />
+                                    <input class="fs-input" id="email" name="email" required placeholder="E-mail" type="email" />
                                 </div>
                                 <div class="fs-field">
-                                    <label class="fs-label" for="number">Phone Number</label>
-                                    <input class="fs-input" id="number" name="number" placeholder="Number" />
+                                    <label class="fs-label" for="number">Phone Number (Ex. +492814578956)</label>
+                                    <input class="fs-input" id="number" name="number" placeholder="Number in the format +491794862024" pattern="\+\d{5,}" />
                                 </div>
                                 <div class="fs-field">
                                     <label class="fs-label" for="message">Message</label>
