@@ -513,7 +513,6 @@ header .mobil {
   justify-content: center;
   align-items: center;
   width: 30%;
-  border-right: 1px solid;
 }
 
 .contact-info {
@@ -585,6 +584,7 @@ span.button-text{
   color: #283629;
   outline: solid;
   font-family:  'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
   font-weight: 900;
 }
 
