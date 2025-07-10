@@ -614,6 +614,11 @@ textarea::placeholder, input::placeholder{
   background-color: #3D3D3D;
 }
 
+.warning{
+  border-bottom: 1px solid;
+  font-size: 5px;
+}
+
 
 /* END OF CONTACT SECTION*/
 

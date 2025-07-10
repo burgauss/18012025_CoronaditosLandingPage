@@ -31,7 +31,7 @@
             </nav>
         </div>
         <div class="mobil">
-            <div class="logo left">
+            <!-- <div class="logo left">
                 <img src="./resources/images/ic-logo.svg" alt="logo lion colmar">
             </div>
             <nav>
@@ -40,7 +40,7 @@
                     <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online icon"> </a></li>
                     <li><a href="#"><img src="./resources/images/ic-login.svg" alt="login icon"></a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
         </div>
 
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="mobil">
-                <div class="subsection right">
+                <!-- <div class="subsection right">
                     <div class="article">
                         <div class="image-container">
                             <img src="./resources/images/information-orientation-mobile.jpg"
@@ -121,8 +121,8 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> -->
+            </div> 
         </div>
         <!-- End of Description Section-->
 
@@ -213,7 +213,6 @@
                                 slides[i].style.display = "none";
                             }
                             slides[slideIndex - 1].style.display = "block";
-                            dots[slideIndex - 1].className += " active";
                         }
                     </script>
                 </div>
@@ -272,7 +271,7 @@
                     </div>
                     <div class="contacto-right">
                         <div class="contact-form"> <!--fs-form-->
-                            <form action="https://formsubmit.co/burgos.135@gmail.com" method="POST">
+                            <form action="https://formsubmit.co/burgos.135@gmail.com" method="POST" id="form">
                                 <div class="fs-field">
                                     <label class="fs-label" for="name">Name</label>
                                     <input class="fs-input" id="name" name="name" required placeholder="Name" />
@@ -280,10 +279,12 @@
                                 <div class="fs-field">
                                     <label class="fs-label" for="email">Email Address</label>
                                     <input class="fs-input" id="email" name="email" required placeholder="E-mail" type="email" />
+                                    <p class="email warning" id="email-warning" hidden></p>
                                 </div>
                                 <div class="fs-field">
                                     <label class="fs-label" for="number">Phone Number (Ex. +492814578956)</label>
                                     <input class="fs-input" id="number" name="number" placeholder="Number in the format +491794862024" pattern="\+\d{5,}" />
+                                    <p class="number warning" id="number-warning" hidden></p>
                                 </div>
                                 <div class="fs-field">
                                     <label class="fs-label" for="message">Message</label>
@@ -292,8 +293,8 @@
                                     id="message"
                                     name="message"
                                     placeholder="Message"
-                                    required
                                     ></textarea>
+                                    <p class="message warning" id="message-warning" hidden></p>
                                 </div>
                                 <div class="fs-button-group">
                                     <button class="fs-button" type="submit">Submit</button>
