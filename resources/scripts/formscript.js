@@ -39,28 +39,50 @@ const formValidation = (e) => {
             }
             break
      case "email":
-            if (expressions.correo.test(e.target.value)){
-                document.getElementById("email").classList.remove('incorrect_input')
-            } else{
-                document.getElementById("email").classList.add('incorrect_input')
-            }
+            validateField(expressions.correo, e.target, "email", "email-warning", "Not a valid E-Mail")
+            // if (expressions.correo.test(e.target.value)){
+            //     document.getElementById("email").classList.remove('incorrect_input')
+            //     document.getElementById("email-warning").hidden = true
+            // } else{
+            //     document.getElementById("email").classList.add('incorrect_input')
+            //     document.getElementById("email-warning").textContent = "Not a valid E-Mail"
+            //     document.getElementById("email-warning").hidden = false
+            // }
             break   
         case "number":
-            if (expressions.telefono.test(e.target.value)){
-                document.getElementById("number").classList.remove('incorrect_input')
-            } else{
-                document.getElementById("number").classList.add('incorrect_input')
-            }
+            validateField(expressions.telefono, e.target, "number", "number-warning", "Not a valid number")
+            // if (expressions.telefono.test(e.target.value)){
+            //     document.getElementById("number").classList.remove('incorrect_input')
+            //     document.getElementById("number-warning").hidden = true
+            // } else{
+            //     document.getElementById("number").classList.add('incorrect_input')
+            //     document.getElementById("number-warning").textContent = "Not a valid Number"
+            //     document.getElementById("number-warning").hidden = false
+            // }
             break
         case "message":
             if (message.value.length > 0){
                 message.classList.remove('incorrect_input')
+                document.getElementById("message-warning").hidden = true
             } else {
                 message.classList.add('incorrect_input')
+                document.getElementById("message-warning").textContent = "Not a valid Number"
+                document.getElementById("message-warning").hidden = false
             }
             break
     }
 
+}
+
+const validateField = (expresion, input, fieldName, fieldWarningName, warning_message) => {
+    if (expresion.test(input.value)){
+        document.getElementById(fieldName).classList.remove('incorrect_input')
+        document.getElementById(fieldWarningName).hidden = true
+    } else{
+        document.getElementById(fieldName).classList.add('incorrect_input')
+        document.getElementById(fieldWarningName).textContent = warning_message
+        document.getElementById(fieldWarningName).hidden = false
+    }
 }
 
 inputs.forEach((inputs) => {
