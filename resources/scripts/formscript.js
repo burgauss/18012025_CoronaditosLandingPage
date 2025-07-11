@@ -20,10 +20,18 @@
 const form = document.getElementById('form')
 const inputs = document.querySelectorAll('#form input.fs-input') //make sure to ignore the last two elements
 const message = document.getElementById('message')
+let isValidated = false
 
 const expressions = {
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\+?\d{7,14}$/ // 7 a 14 numeros.
+}
+
+const fields = {
+    name : false,
+    email: false,
+    number: false,
+    message: false
 }
 
 const formValidation = (e) => {
@@ -32,10 +40,12 @@ const formValidation = (e) => {
             if (e.target.value.length > 0){
                 document.getElementById("name").classList.remove('incorrect_input')
                 document.getElementById("name-warning").hidden = true
+                fields.name = true
             } else{
                 document.getElementById("name").classList.add('incorrect_input')
                 document.getElementById("name-warning").textContent = "Not a valid name"
                 document.getElementById("name-warning").hidden = false
+                fields.name = false
             }
             break
      case "email":
@@ -48,10 +58,12 @@ const formValidation = (e) => {
             if (message.value.length > 0){
                 message.classList.remove('incorrect_input')
                 document.getElementById("message-warning").hidden = true
+                fields.message = true
             } else {
                 message.classList.add('incorrect_input')
                 document.getElementById("message-warning").textContent = "Not a valid Number"
                 document.getElementById("message-warning").hidden = false
+                fields.message = false
             }
             break
     }
@@ -62,10 +74,12 @@ const validateField = (expresion, input, fieldName, fieldWarningName, warning_me
     if (expresion.test(input.value)){
         document.getElementById(fieldName).classList.remove('incorrect_input')
         document.getElementById(fieldWarningName).hidden = true
+        fields[fieldName] = true
     } else{
         document.getElementById(fieldName).classList.add('incorrect_input')
         document.getElementById(fieldWarningName).textContent = warning_message
         document.getElementById(fieldWarningName).hidden = false
+        fields[fieldName]  = false
     }
 }
 
@@ -80,5 +94,9 @@ message.addEventListener('blur', formValidation)
 
 form.addEventListener('submit', e =>{
     e.preventDefault()
-
+    if (Object.values(fields).every(value => value === true)){
+        form.submit()
+        // form.reset()
+    }
+    
 })
