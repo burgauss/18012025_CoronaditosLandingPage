@@ -40,25 +40,9 @@ const formValidation = (e) => {
             break
      case "email":
             validateField(expressions.correo, e.target, "email", "email-warning", "Not a valid E-Mail")
-            // if (expressions.correo.test(e.target.value)){
-            //     document.getElementById("email").classList.remove('incorrect_input')
-            //     document.getElementById("email-warning").hidden = true
-            // } else{
-            //     document.getElementById("email").classList.add('incorrect_input')
-            //     document.getElementById("email-warning").textContent = "Not a valid E-Mail"
-            //     document.getElementById("email-warning").hidden = false
-            // }
             break   
         case "number":
             validateField(expressions.telefono, e.target, "number", "number-warning", "Not a valid number")
-            // if (expressions.telefono.test(e.target.value)){
-            //     document.getElementById("number").classList.remove('incorrect_input')
-            //     document.getElementById("number-warning").hidden = true
-            // } else{
-            //     document.getElementById("number").classList.add('incorrect_input')
-            //     document.getElementById("number-warning").textContent = "Not a valid Number"
-            //     document.getElementById("number-warning").hidden = false
-            // }
             break
         case "message":
             if (message.value.length > 0){
