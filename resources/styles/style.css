@@ -300,6 +300,10 @@ header .mobil {
 /*//////////////////////////////
 */
 
+.rooms {
+  scroll-margin-top: 80px;
+}
+
 .roomsContainer {
   display: flex;
   flex-direction: row;
@@ -434,6 +438,10 @@ header .mobil {
 
 /* Location section */
 
+.location{
+  scroll-margin-top: 80px;
+}
+
 .location h1{
   margin: 0px;
   color:#4a4a4a;
@@ -497,6 +505,10 @@ header .mobil {
 /* END OF LOCATION SECTION */
 
 /* START OF CONTACT SECTION*/
+
+.contacto{
+  scroll-margin-top: 80px;
+}
 
 .contacto h1{
   margin: 0px;
