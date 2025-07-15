@@ -47,10 +47,25 @@ header .mobil {
     display: none;
 }
 
+.banner .mobil{
+  display: none;
+}
+
 .section .mobil{
     display: none;
 }
 
+.rooms .mobil{
+  display:none;
+}
+
+.location .mobil{
+  display: none;
+}
+
+.contact .mobil{
+  display: none;
+}
   /*header*/
 
   header{
@@ -125,17 +140,25 @@ header .mobil {
         display: none;
     }
 
-    header .mobil{
-        display: flex;
-        justify-content: space-around;
+    .mobil.banner{
+      position: fixed;
+      top:0;
+      display: flex;
+      justify-content: space-around;
+      background-color: #25D366;
+      z-index: 100;
+      width: 100%;
+      border-bottom: solid 1px gray;
+      height: 80px;
     }
 
   }
 
+  /* End of Header section */
   /* main content  */
 
   /* banner section  */
-  .banner{
+  .banner .desktop{
     /* background-color: lightgray; */
     background-image: url("../images/FondoBanner_2.svg");
     background-repeat: no-repeat;
@@ -179,9 +202,13 @@ header .mobil {
   }
 
 /*****************************/
-  @media only screen and (max-width:480px){
+@media only screen and (max-width:480px){
+    
+  .banner .mobil{
+    display: none;
+    }
 
-        .banner {
+        /* .banner {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -200,10 +227,12 @@ header .mobil {
         .banner h4{
             margin-top: 0;
             margin-bottom: 1.5rem;
-        }
-    }
+        } */
+  }
 
+  /* End of Banner section  */
   /* section Descripcion */
+
   .section .desktop{
     /* display: flex;
     justify-content: center;
@@ -251,53 +280,8 @@ header .mobil {
   @media only screen and (max-width:480px){
 
     .section .desktop{
-        display: none;
-    }
-
-    .section .mobil{
-        display: block;
-    }
-
-    .section .mobil{
-        margin: 0;
-    }
-    .section .mobil .left{
-        display: none;
-    }
-
-    .section .mobil .right{
-        margin: 0;
-        border-left: none;
-        width: 100%;
-    }
-
-    .section .mobil .article{
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin: 1.5rem 0;
-        align-items: flex-start;
-    }
-
-    .section .mobil .right .article .image-container{
-        height: 150px;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .section .mobil .right .article img{
-        height: 100%;
-        width: 100%;
-    }
-
-    .section .mobil .right .article h3{
-        margin-top: 1rem;
-        margin-bottom: 0;
-    }
-
-    .section .mobil .article-content{
-        padding-left: 1rem;
-    }
+      display: none;
+  }
 
 }
 /*///////////////////////////////
@@ -403,38 +387,8 @@ header .mobil {
 
 @media only screen and (max-width:480px)
 {
-    .courses-section
-    {
-        background-color: white;
-        border-top:solid 1px lightgray;
-    }
-    .courses-section .courses{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-
-    .courses-section .course{
-        margin: 0;
-        width: 80%;
-        height: auto;
-        text-align: center;
-        background-color: #4a4a4a;
-        margin-bottom: 0.5rem;
-        border-radius: 10px;
-
-    }
-
-    .courses-section h3{
-        color: white;
-    }
-
-    .courses-section .image-container img{
-        display: none;
-    }
-
-    .courses-section p{
-        display: none;
+    .rooms .desktop{
+      display: none;
     }
 
 }
@@ -472,39 +426,11 @@ header .mobil {
   text-align: justify;
 }
 
-  @media only screen and (max-width:480px){
+@media only screen and (max-width:480px){
 
-    .thesis-section{
-        border-top: solid 1px lightgrey;
-    }
-
-    .thesis-section .section-content{
-        display: none;
-    }
-
-    .thesis-section .content{
-        margin: 0;
-        width: 100%;
-    }
-
-    .thesis-section .left{
-        width: 100%;
-    }
-
-    .thesis-section .left .video-container{
-        width: 100%;
-    }
-
-
-    .content .right{
-        display: none;
-    }
-
-    .content .left{
-        border-right: none;
-        padding: 0;
-        margin: 0;
-    }
+  .location .mobil{
+    display: none;
+  }
 }
 
 /* END OF LOCATION SECTION */
@@ -650,6 +576,14 @@ textarea::placeholder, input::placeholder{
   margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
+
+@media only screen and (max-width:480px){
+
+  .contact .mobil{
+    display: none;
+  }
+}
+
 
 
 /* END OF CONTACT SECTION*/
