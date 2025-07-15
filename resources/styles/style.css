@@ -140,16 +140,23 @@ header .mobil {
         display: none;
     }
 
-    .mobil.banner{
+
+    header .mobil{
       position: fixed;
+      display: block;
       top:0;
-      display: flex;
-      justify-content: space-around;
-      background-color: #25D366;
+      background-image:  url("../images/Coronaditos Web Mobil-3.svg");
+      background-position-y: 70%;
+      background-size:cover;
+      background-repeat:no-repeat;
       z-index: 100;
       width: 100%;
       border-bottom: solid 1px gray;
-      height: 80px;
+      height: 8rem;
+    }
+
+    header .mobil .top-menu {
+      height: 100%;
     }
 
   }
