@@ -207,7 +207,7 @@ header .mobil {
     padding: 1rem;
   }
 
-  .banner .start-here{
+  .banner .desktop .start-here{
     margin-left: 1.5rem;
     padding: 3rem 4rem 4rem;
     display: flex;
@@ -217,14 +217,14 @@ header .mobil {
     text-align:justify;
     border-left: solid 1px gray;
   }
-  .banner .start-here h4{
+  .banner .desktop .start-here h4{
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 2rem;
     font-family:'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .banner h1{
+  .banner .desktop h1{
     color:#4a4a4a;
     text-decoration: underline;
     font-size: 2.5rem;
@@ -234,31 +234,46 @@ header .mobil {
 /*****************************/
 @media only screen and (max-width:480px){
 
-  .banner .mobil{
+  .banner .desktop{
     display: none;
-    }
-
-        /* .banner {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0;
-            min-width: 330px;
-        }
-
-        .banner .start-here{
-            margin: 2rem 1rem;
-        }
-
-        .banner h1{
-            margin-bottom: 2rem;
-        }
-
-        .banner h4{
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-        } */
   }
+  
+  .banner .mobil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .image-container{
+    margin-top: 10px;
+  }
+
+  .banner .mobil .image-container img{
+    height: 17rem;
+    padding: 0;
+  }
+
+  .banner .mobil .start-here{
+    padding: 0 0.4rem 0.4rem;
+    text-align: center;
+  }
+
+  .banner .mobil h1{
+    color:#4a4a4a;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .banner .mobil h4{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family:'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+}
 
   /* End of Banner section  */
   /* section Descripcion */
