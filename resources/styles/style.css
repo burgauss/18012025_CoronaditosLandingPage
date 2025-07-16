@@ -77,7 +77,7 @@ header .mobil {
     border-bottom: solid 1px gray;
     height: 80px;
   }
-  
+
 
   header .desktop{
     display: flex;
@@ -160,12 +160,26 @@ header .mobil {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      padding: 0.2rem;
     }
 
     header .mobil .logo{
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    header .mobil .whatsappLink{
+      display:flex;
+      line-height: 0;
+    }
+
+    .headerIcon{
+      border-radius: 15px;
+    }
+
+    .headerIcon:active{
+      opacity: 0.7;
     }
 
   }
@@ -219,7 +233,7 @@ header .mobil {
 
 /*****************************/
 @media only screen and (max-width:480px){
-    
+
   .banner .mobil{
     display: none;
     }
