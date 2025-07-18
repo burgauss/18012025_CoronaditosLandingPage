@@ -326,11 +326,77 @@ header .mobil {
 
     .section .desktop{
       display: none;
+    }
+
+    .section .mobil{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 2rem 1.5rem 0px;
+    }
+
+    .slideshow-container-cultura-mobil {
+      width: 25%;
+      flex-shrink: 0;
+      position: relative;
+      margin: auto;
+    }
+
+    .slideshow-container-cultura-mobil img{
+      border-radius: 30px;
+    }
+
+    .mySlidesCultura {
+      display: none;
+    }
+
+    .section .mobil .prev, 
+    .section .mobil .next{
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .section .mobil .next{
+      right:0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .section .mobil .prev:hover, 
+    .section .mobil .next:hover{
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .section .mobil .numbertext{
+      color: black;
+      font-weight: 900;
+      font-size: 18px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .section .mobil .fade{
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
   }
 
-}
-
-/* section Descripcion */
+/* End of section Descripcion */
 
 /*///////////////////////////////
 /* Rooms section */
@@ -476,7 +542,7 @@ header .mobil {
 
 @media only screen and (max-width:480px){
 
-  .location .mobil{
+  .location .desktop{
     display: none;
   }
 }
@@ -627,7 +693,7 @@ textarea::placeholder, input::placeholder{
 
 @media only screen and (max-width:480px){
 
-  .contact .mobil{
+  .contacto .desktop{
     display: none;
   }
 }
