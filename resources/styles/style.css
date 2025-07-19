@@ -280,6 +280,7 @@ header .mobil {
 
   .banner .mobil h4{
     margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 1rem;
     font-family:'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
   }
