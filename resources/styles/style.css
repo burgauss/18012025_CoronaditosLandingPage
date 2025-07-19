@@ -66,6 +66,14 @@ header .mobil {
 .contact .mobil{
   display: none;
 }
+
+.mobil h1{
+  color:#4a4a4a;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0;
+}
   /*header*/
 
   header{
@@ -136,10 +144,10 @@ header .mobil {
   }
 
   @media only screen and (max-width:480px){
+
     header .desktop{
         display: none;
     }
-
 
     header .mobil{
       position: fixed;
@@ -250,8 +258,11 @@ header .mobil {
   }
 
   .banner .mobil .image-container img{
-    height: 17rem;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
     padding: 0;
+    object-fit: cover;
   }
 
   .banner .mobil .start-here{
@@ -394,6 +405,12 @@ header .mobil {
       from {opacity: .4}
       to {opacity: 1}
     }
+
+  .section .mobil .culturaText{
+    padding: 0 0.4rem 0.4rem;
+    text-align: center;
+  }
+
   }
 
 /* End of section Descripcion */
