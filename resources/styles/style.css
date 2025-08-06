@@ -559,6 +559,11 @@ header .mobil {
       margin-top: 0.3rem;
     }
 
+    .rooms .mobil .roomsMobilText{
+      padding: 0 0.4rem 0.4rem;
+      text-align: center;
+    }
+
     .rooms .mobil .prev,
     .rooms .mobil .next{
       cursor: pointer;
