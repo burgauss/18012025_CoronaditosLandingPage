@@ -768,8 +768,8 @@ span.button-text{
   /* box-shadow: 0 0 20px rgba(0,0,0,0.2);   */
   border-radius: 30px;
   text-align: center;
-  margin-left: 40px;
-  width: 25rem;
+  margin-left: 10px;
+  width: 90%;
 }
 
 .fs-field {
@@ -864,6 +864,17 @@ textarea::placeholder, input::placeholder{
   .whatsappButton{
     min-width: 200px;
     white-space: nowrap;  
+  }
+
+  .contacto-right{
+    width: 100%;
+  }
+
+  .contact-form{
+    justify-content: center;
+    width: 96%;
+    padding: 0;
+    margin: 0;
   }
 
 }
