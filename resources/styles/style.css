@@ -663,6 +663,34 @@ header .mobil {
   .location .desktop{
     display: none;
   }
+
+  .location .mobil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location .mobil h1{
+    color:#4a4a4a;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .location .mobil h4{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    font-family:'Poiret One', Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .location .mobil .ubicacionMobilText{
+    padding: 0 0.4rem 0.4rem;
+    text-align: center;
+  }
+
 }
 
 /* END OF LOCATION SECTION */
@@ -811,9 +839,33 @@ textarea::placeholder, input::placeholder{
 
 @media only screen and (max-width:480px){
 
-  .contacto .desktop{
+  /* .contacto .desktop{
+    display: none;
+  } */
+
+  .contacto .desktop h1{
     display: none;
   }
+
+  .contacto .contactoContainer{
+    flex-direction: column;
+    padding: 0 0 0.4rem 0.4rem;
+    text-align: center;
+  }
+
+  .contacto-left{
+    width: 100%;
+  }
+
+  .contacto-left img{
+    width: 100%;
+  }
+
+  .whatsappButton{
+    min-width: 200px;
+    white-space: nowrap;  
+  }
+
 }
 
 
